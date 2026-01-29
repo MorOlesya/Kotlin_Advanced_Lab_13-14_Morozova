@@ -8,9 +8,13 @@ fun main() {
 //    println(question1.toString())
 //
 //    println()
+//
+//    println("${StudentProgress.answered} of ${StudentProgress.total} answered")
+//
+//    println("${Quiz.answered} of ${Quiz.total} answered")
+//
+//    println(Quiz.progressText)
 
-    //println("${StudentProgress.answered} of ${StudentProgress.total} answered")
-
-    println("${Quiz.answered} of ${Quiz.total} answered")
+    Quiz.printProgressBar()
 }
 
