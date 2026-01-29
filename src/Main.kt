@@ -104,7 +104,9 @@ fun main() {
 //    solarSystem["Jupiter"] = 78
 //    println(solarSystem["Jupiter"])
 
-    
+    cookies.forEach {
+        println("Пункт меню: ${it.name}")
+    }
 
 }
 
