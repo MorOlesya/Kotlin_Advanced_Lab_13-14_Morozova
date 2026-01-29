@@ -11,8 +11,22 @@ fun main() {
 //    println("${Quiz.answered} of ${Quiz.total} answered")
 //    println(Quiz.progressText)
 //    Quiz.printProgressBar()
-    Quiz().PrintProgressBar()
+//    Quiz().PrintProgressBar()
+//
+//    Quiz().apply { PrintQuiz() }
 
-    Quiz().apply { PrintQuiz() }
+    println(solarSystem[0])
+    println(solarSystem[1])
+    println(solarSystem[2])
+    println(solarSystem[3])
+    println(solarSystem[4])
+    println(solarSystem[5])
+    println(solarSystem[6])
+    println(solarSystem[7])
+
+    solarSystem[3] = "Little Earth"
+    println(solarSystem[3])
+
+    println(newSolarSystem[8])
 }
 
