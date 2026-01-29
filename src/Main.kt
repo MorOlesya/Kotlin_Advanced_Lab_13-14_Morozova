@@ -4,17 +4,13 @@ fun main() {
 //    println(question3.answer)
 //
 //    println()
-//
 //    println(question1.toString())
-//
 //    println()
 //
 //    println("${StudentProgress.answered} of ${StudentProgress.total} answered")
-//
 //    println("${Quiz.answered} of ${Quiz.total} answered")
-//
 //    println(Quiz.progressText)
-
-    Quiz.printProgressBar()
+//    Quiz.printProgressBar()
+    Quiz().PrintProgressBar()
 }
 

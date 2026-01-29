@@ -1,6 +1,13 @@
+interface ProgressPrintable {
+    var progressText: String
+    fun PrintProgressBar()
+}
 
+class Quiz : ProgressPrintable {
+    override var progressText: String
+        get() = "${answered} of ${total} answered"
+        set(value) {}
 
-class Quiz{
     val question1 = Question<String>(
         "Речка спятила с ума – По домам пошла сама. ____",
         "водопровод",
@@ -23,14 +30,21 @@ class Quiz{
         var total: Int = 10
         var answered: Int = 3
     }
+
+    override fun PrintProgressBar() {
+        repeat(Quiz.answered) { print("▓") }
+        repeat(Quiz.total - Quiz.answered) { print("▒") }
+        println()
+        println(progressText)
+    }
 }
 
-val Quiz.StudentProgress.progressText: String
-    get() = "${answered} of ${total} answered"
+//val Quiz.StudentProgress.progressText: String
+//    get() = "${answered} of ${total} answered"
 
-fun Quiz.StudentProgress.printProgressBar() {
-    repeat(Quiz.answered) { print("▓") }
-    repeat(Quiz.total - Quiz.answered) { print("▒") }
-    println()
-    println(Quiz.progressText)
-}
+//fun Quiz.StudentProgress.printProgressBar() {
+//    repeat(Quiz.answered) { print("▓") }
+//    repeat(Quiz.total - Quiz.answered) { print("▒") }
+//    println()
+//    println(Quiz.progressText)
+//}
