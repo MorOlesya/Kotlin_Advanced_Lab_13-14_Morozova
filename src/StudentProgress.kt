@@ -37,6 +37,29 @@ class Quiz : ProgressPrintable {
         println()
         println(progressText)
     }
+
+    fun PrintQuiz(){
+        question1.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+
+        question2.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+
+        question3.let {
+            println(it.questionText)
+            println(it.answer)
+            println(it.difficulty)
+        }
+        println()
+    }
 }
 
 //val Quiz.StudentProgress.progressText: String

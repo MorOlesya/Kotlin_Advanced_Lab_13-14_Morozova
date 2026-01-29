@@ -12,5 +12,7 @@ fun main() {
 //    println(Quiz.progressText)
 //    Quiz.printProgressBar()
     Quiz().PrintProgressBar()
+
+    Quiz().apply { PrintQuiz() }
 }
 
